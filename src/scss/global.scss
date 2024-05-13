@@ -1,0 +1,40 @@
+@use "./mixins/" as *;
+@use "./variables/" as *;
+
+:root {
+  --page-font-size: $page-font-size;
+}
+
+::selection {
+  color: $default-text-color;
+  background-color: $brown-color-first;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #151515;
+  color: $default-text-color;
+}
+
+.page {
+  min-height: calc(100vh - $navbar-height);
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+@include break-max(768px) {
+  :root {
+    font-size: $responsive-font-size;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}

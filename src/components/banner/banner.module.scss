@@ -1,0 +1,33 @@
+@use "../../scss/mixins/" as *;
+@use "../../scss/variables/" as *;
+@use "../../scss/components/" as *;
+
+.banner :global {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - $navbar-height);
+
+  .left {
+    align-self: center;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+  
+  button {
+    @include button() {
+      margin-top: 1rem;
+    }
+  }
+
+  @include break-max(768px) {
+    .item {
+      grid-column: span 2;
+    }
+  }
+}

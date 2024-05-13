@@ -1,0 +1,21 @@
+@mixin break-max($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin break-min($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin rounded-item($size) {
+  width: #{$size}px;
+  height: #{$size}px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  @content;
+}
