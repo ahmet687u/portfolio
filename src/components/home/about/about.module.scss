@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   overflow: hidden;
+  margin-top: 3rem;
 
   header {
     grid-column: span 2;
@@ -13,7 +14,7 @@
     margin: 1rem 0;
   }
 
-  @include break-max(768px) {
+  @include break-max(900px) {
     gap: 20px;
 
     div {

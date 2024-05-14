@@ -7,13 +7,14 @@ export default function Banner() {
       <div className="left item">
         <header>
           <h1>Hı I am Ahmet. </h1>
+          <h5>I am a Front End Developer</h5>
         </header>
 
         <p className="text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima porro
-          nesciunt cupiditate ut repellendus quaerat, dolorum numquam itaque
-          voluptatibus nostrum maxime excepturi! Itaque ducimus reprehenderit
-          cupiditate. Nihil harum modi illo.
+          Web Geliştirme Yolculuğuna Hoş Geldiniz! İşlevsellikten Tasarıma,
+          Kodlama Sanatıyla Sınırları Zorluyorum. Dijital Dünyayı Yeniden
+          Şekillendirirken, İhtiyaçlarınıza Özel Çözümler Sunuyorum.
+          Hayallerinizi Kodlarla Gerçeğe Dönüştürmek İçin Birlikte Çalışalım!
         </p>
 
         <button>DOWNLOAD CV</button>

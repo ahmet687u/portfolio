@@ -39,6 +39,18 @@
       }
     }
   }
+
+  // --- Responsive ---
+  @include break-max(900px) {
+    .content {
+      width: 350px;
+      height: 350px;
+
+      .circle_item {
+        transform-origin: 195px !important;
+      }
+    }
+  }
 }
 
 @keyframes circle {

@@ -12,19 +12,22 @@
     align-self: center;
     padding: 0 2rem;
 
-    h1 {
-      font-size: 2.3rem;
+    header {
       margin-bottom: 1rem;
+
+      h1 {
+        font-size: 2.3rem;
+      }
     }
   }
-  
+
   button {
     @include button() {
       margin-top: 1rem;
     }
   }
 
-  @include break-max(768px) {
+  @include break-max(900px) {
     .item {
       grid-column: span 2;
     }

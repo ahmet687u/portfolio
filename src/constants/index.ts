@@ -2,8 +2,10 @@ import { IShareButton, TNavbarLinks } from "@/types";
 
 import { SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaReact } from "react-icons/fa";
+
 
 export const navbarLinks: TNavbarLinks[] = [
   {
@@ -25,7 +27,7 @@ export const navbarLinks: TNavbarLinks[] = [
 ]
 
 export const experienceCircleIcons: IShareButton[] = [
-  { Icon: FaHtml5 }, { Icon: FaCss3Alt }, { Icon: IoLogoJavascript }, { Icon: FaSass }, { Icon: FaBootstrap }, { Icon: FaReact }, { Icon: SiRedux }, { Icon: TbBrandNextjs }
+  { Icon: FaHtml5 }, { Icon: FaCss3Alt }, { Icon: IoLogoJavascript }, { Icon: FaSass }, { Icon: FaBootstrap }, { Icon: FaReact }, { Icon: SiRedux }, { Icon: TbBrandNextjs }, { Icon: BiLogoTypescript }
 ]
 
 export const aboutText = [
