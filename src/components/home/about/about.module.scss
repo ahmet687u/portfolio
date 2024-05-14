@@ -1,0 +1,23 @@
+@use "../../../scss/mixins/" as *;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  overflow: hidden;
+
+  header {
+    grid-column: span 2;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  @include break-max(768px) {
+    gap: 20px;
+
+    div {
+      grid-column: span 2;
+    }
+  }
+}

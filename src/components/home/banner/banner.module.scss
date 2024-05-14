@@ -1,6 +1,6 @@
-@use "../../scss/mixins/" as *;
-@use "../../scss/variables/" as *;
-@use "../../scss/components/" as *;
+@use "../../../scss/mixins/" as *;
+@use "../../../scss/variables/" as *;
+@use "../../../scss/components/" as *;
 
 .banner :global {
   gap: 10px;
@@ -16,7 +16,6 @@
       font-size: 2.3rem;
       margin-bottom: 1rem;
     }
-
   }
   
   button {

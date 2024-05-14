@@ -38,3 +38,22 @@ body {
 .align-center {
   align-items: center;
 }
+
+.my-center {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 1rem auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: .4rem;
+}

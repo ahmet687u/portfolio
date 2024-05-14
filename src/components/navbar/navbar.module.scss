@@ -16,7 +16,7 @@
     &.contact {
       a {
         transition: all .2s;
-        @include rounded-item(40) {
+        @include rounded-item(40px) {
           border: 1px solid $brown-color-first;
           color: $brown-color-first;
 

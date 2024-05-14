@@ -1,4 +1,5 @@
 import styles from "./banner.module.scss";
+import ExperienceCircle from "@/components/experience/ExperienceCircle";
 
 export default function Banner() {
   return (
@@ -18,7 +19,9 @@ export default function Banner() {
         <button>DOWNLOAD CV</button>
       </div>
 
-      <div className="right item"></div>
+      <div className="right item my-center">
+        <ExperienceCircle />
+      </div>
     </div>
   );
 }
