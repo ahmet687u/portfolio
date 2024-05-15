@@ -27,10 +27,12 @@ const item = {
   show: { opacity: 1, y: 100 },
 };
 
-const AboutSection = () => {
+const AboutSection = (): JSX.Element => {
   return (
     <section className={`container ${styles.about}`}>
-      <header className="title">Hakkımda</header>
+      <header className="title">
+        <h1>Hakkımda</h1>
+      </header>
 
       <motion.div variants={variants} initial="hidden" whileInView={{ x: 0 }}>
         Lorem ipsum dolor sit amet.

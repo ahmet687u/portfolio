@@ -57,4 +57,33 @@ body {
   text-align: center;
   margin: 2rem 0;
   letter-spacing: .4rem;
+  text-align: center;
+
+  h1 {
+    position: relative;
+    display: inline-block;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $brown-color-first;
+    }
+
+    &::after {
+      left: 0;
+      bottom: -15px;
+      width: 100%;
+      height: 2px;
+      border-radius: 3px;
+    }
+
+    &::before {
+      @include rounded-item(12px, false) {
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%, );
+      }
+    }
+  }
 }

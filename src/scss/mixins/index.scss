@@ -10,12 +10,14 @@
   }
 }
 
-@mixin rounded-item($size) {
+@mixin rounded-item($size, $is_center: true) {
   width: $size;
   height: $size;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  @if ($is_center == true) {
+    display: grid;
+    place-items: center;
+  }
   font-size: 1.2rem;
   @content;
 }
