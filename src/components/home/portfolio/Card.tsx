@@ -22,7 +22,6 @@ const CardItem = (props: ICardItemProps): JSX.Element => {
       <motion.div
         className={styles.card}
         data-index={props.index + 1}
-        // data-index={props.title}
         style={{
           scale,
           backgroundColor: props.color,

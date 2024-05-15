@@ -28,6 +28,8 @@
   }
 
   @include break-max(900px) {
+    row-gap: 60px;
+
     .item {
       grid-column: span 2;
     }

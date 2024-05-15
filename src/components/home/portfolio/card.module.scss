@@ -17,6 +17,7 @@
       display: inline-block;
       margin: .5rem 0 1.5rem 0;
       font-size: .8rem;
+      z-index: 99999;
     }
 
     &:not(:has(.link)) {

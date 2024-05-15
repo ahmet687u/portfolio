@@ -1,6 +1,6 @@
 import Banner from "@/components/home/banner/Banner";
 import AboutSection from "@/components/home/about/AboutSection";
-import PortfolioSection from "@/components/home/services/PortfolioSection";
+import PortfolioSection from "@/components/home/portfolio/PortfolioSection";
 
 export default function Home() {
   return (
