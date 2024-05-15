@@ -21,3 +21,9 @@
   font-size: 1.2rem;
   @content;
 }
+
+@mixin cross-code($code, $value) {
+  -webkit-#{$code}: $value;
+  -moz-#{$code}: $value;
+  $code: $value;
+}

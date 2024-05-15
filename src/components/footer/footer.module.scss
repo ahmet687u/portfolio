@@ -7,7 +7,6 @@
   padding: 1rem;
 
   svg {
-    margin-right: .8rem;
     font-size: 1.2rem;
   }
 
@@ -25,14 +24,37 @@
     }
   }
 
+  .mr {
+    margin-right: .8rem;
+  }
+
   .section {
     padding: 0 2rem;
+
+    &:nth-child(1) {
+      ul {
+        a {
+          margin-right: 1rem;
+          transition: all .2s;
+
+          @include rounded-item(40px) {
+            border: 1px solid $brown-color-first;
+            color: $brown-color-first;
+
+            &:hover {
+              background-color: $brown-color-first;
+              color: $body-background-color;
+            }
+          }
+        }
+      }
+    }
   }
 
   // --- Responsive ---
   @include break-max(768px) {
     .section {
-      grid-column: span / 2;
+      grid-column: span 2;
     }
   }
 }

@@ -29,7 +29,7 @@
     }
 
     li {
-      &.active {
+      :where(&.active, li:hover) {
         color: $brown-color-first;
       }
     }

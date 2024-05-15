@@ -24,7 +24,7 @@ const CardItem = (props: ICardItemProps): JSX.Element => {
         data-index={props.index + 1}
         style={{
           scale,
-          backgroundColor: props.color,
+          // backgroundColor: props.color,
           top: `calc(-10% + ${props.index * 50}px)`,
         }}
       >

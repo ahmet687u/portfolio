@@ -1,3 +1,6 @@
+@use "../../../scss/mixins/" as *;
+@use "../../../scss/variables/" as *;
+
 .card_container {
   height: 100vh;
   position: sticky;
@@ -12,6 +15,10 @@
     border-radius: 15px;
     padding: 1rem;
     overflow: hidden;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid $brown-color-first;
+    @include cross-code(box-shadow, 0px 0px 21px 2px rgba(175,130,96,0.28));
+
 
     .link {
       display: inline-block;

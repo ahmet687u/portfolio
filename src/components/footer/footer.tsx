@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.section}>
         <h3>Bana Ulaşın</h3>
         <Link href="mailto:biyikliahmet72@gmail.com" className="flex align-center">
-          <CiMail />
+          <CiMail className={styles.mr} />
           biyikliahmet72@gmail.com
         </Link>
         <ul className="flex align-center">
@@ -36,7 +36,7 @@ const Footer = () => {
             <Link href="/hakkimda">Hakkımda</Link>
           </li>
           <li>
-            <Link href="/calismalarim">Çalışmlarım</Link>
+            <Link href="/calismalarim">Çalışmalarım</Link>
           </li>
         </ul>
       </div>
