@@ -19,10 +19,6 @@ export const navbarLinks: TNavbarLinks[] = [
   {
     route: "/calismalarim",
     label: "Çalışmalarım"
-  },
-  {
-    route: "/iletisim",
-    label: "İletişim"
   }
 ]
 

@@ -2,8 +2,8 @@
 
 export default function About() {
   return (
-    <div>
+    <section className="page">
       Hakkımda
-    </div>
+    </section>
   )
 }
