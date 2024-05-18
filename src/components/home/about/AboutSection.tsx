@@ -47,7 +47,7 @@ const AboutSection = (): JSX.Element => {
               whileInView={{ y: 0 }}
               className="text"
             >
-              {text}...
+              {text} {i === 1 ? "..." : ""}
             </motion.p>
           ))}
         </Link>

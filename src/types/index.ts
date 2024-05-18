@@ -11,14 +11,14 @@ export interface IShareButton {
   className?: string;
 }
 
-export interface IServiceCards {
+export interface IPortfolioCards {
   title: string;
   color: string;
   description: string;
   link?: string;
 }
 
-export interface ICardItemProps extends IServiceCards {
+export interface ICardItemProps extends IPortfolioCards {
   key: string;
   index: number;
   range: number[];

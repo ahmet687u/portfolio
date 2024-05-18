@@ -3,7 +3,7 @@
 import CardItem from "./Card";
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
-import { serviceCards } from "@/constants";
+import { portfolioCards } from "@/constants";
 
 const PortfolioSection = (): JSX.Element => {
   const container = useRef(null);
@@ -19,14 +19,14 @@ const PortfolioSection = (): JSX.Element => {
       </header>
 
       {/* stack cards */}
-      {serviceCards.map((card, index) => (
+      {portfolioCards.map((card, index) => (
         <CardItem
           {...card}
           index={index}
           key={card.title}
           progress={scrollYProgress}
           range={[index * 0.25, 1]}
-          targetScale={1 - (serviceCards.length - index) * 0.05}
+          targetScale={1 - (portfolioCards.length - index) * 0.05}
         />
       ))}
     </section>

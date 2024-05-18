@@ -1,9 +1,25 @@
-
+import { aboutText } from "@/constants";
+import ExperienceSection from "@/components/about/Experience";
 
 export default function About() {
   return (
-    <div>
-      Hakkımda
-    </div>
-  )
+    <section className="page container">
+      <header className="title">
+        <h1>HAKKIMDA</h1>
+      </header>
+
+      {aboutText.map((txt, i) => (
+        <p key={i} className="text">
+          {txt}
+        </p>
+      ))}
+
+      {/* experience section */}
+      <header className="title">
+        <h3>Tecrübelerim</h3>
+      </header>
+
+      <ExperienceSection />
+    </section>
+  );
 }
