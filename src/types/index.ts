@@ -14,8 +14,8 @@ export interface IShareButton {
 export interface IPortfolioCards {
   title: string;
   color: string;
-  description: string;
   link?: string;
+  description: string;
 }
 
 export interface ICardItemProps extends IPortfolioCards {
@@ -24,4 +24,16 @@ export interface ICardItemProps extends IPortfolioCards {
   range: number[];
   targetScale: number;
   progress: MotionValue<number>
+}
+
+// export interface IExperience extends Omit<IPortfolioCards, "color"> {
+
+// }
+
+export interface IExperience {
+  title: string;
+  date?: string;
+  jobTitle: string;
+  description: string;
+  link?: URL | string;
 }

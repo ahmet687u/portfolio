@@ -65,6 +65,6 @@ export const portfolioCards: IPortfolioCards[] = [
 
 export const experiences = [
   {
-    
+    title: ""
   }
 ]

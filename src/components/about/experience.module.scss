@@ -1,6 +1,7 @@
 @use '../../scss/mixins/' as *;
+@use '../../scss/variables/' as *;
 
-$circle_position: -24px;
+$circle_position: -31px;
 
 .experince_container {
   position: relative;
@@ -15,6 +16,7 @@ $circle_position: -24px;
     height: 100%;
     width: 3px;
     background-color: #fff;
+    transform-origin: top;
   }
 
   .experience_row {
@@ -23,7 +25,7 @@ $circle_position: -24px;
     &.right {
       justify-content: end;
 
-      .experience_item::before {
+      svg {
         left: $circle_position;
       }
     }
@@ -38,14 +40,18 @@ $circle_position: -24px;
       margin: 0 -1rem;
       position: relative;
 
-      &::before {
-        @include rounded-item(15px) {
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: $circle_position;
-          transform: translateY(-50%);
-          background-color: #fff;
+      svg {
+        position: absolute;
+        top: 50%;
+        right: $circle_position;
+        transform: translateY(-50%);
+        
+        circle {
+          stroke: #fff;
+          stroke-width: 2;
+          fill: $body_background_color;
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 0;
         }
       }
     }
