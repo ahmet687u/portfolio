@@ -37,3 +37,8 @@ export interface IExperience {
   description: string;
   link?: URL | string;
 }
+
+export interface ICogProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {
+  size: number;
+  ledgePiece: number;
+}

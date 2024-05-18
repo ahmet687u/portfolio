@@ -1,6 +1,7 @@
 import Banner from "@/components/home/banner/Banner";
 import AboutSection from "@/components/home/about/AboutSection";
-import PortfolioSection from "@/components/home/portfolio/PortfolioSection";
+import PortfolioSection from "@/components/about/portfolio/PortfolioSection";
+import ExperienceSection from "@/components/home/Experience";
 
 export default function Home() {
   return (
@@ -10,8 +11,15 @@ export default function Home() {
       {/* About section */}
       <AboutSection />
 
-      {/* Services Section */}
-      <PortfolioSection />
+      {/* Portfolio Section */}
+      {/* <PortfolioSection /> */}
+
+      <section className="container">
+        <header className="title">
+          <h1>Tecrübelerim</h1>
+        </header>
+        <ExperienceSection />
+      </section>
     </section>
   );
 }

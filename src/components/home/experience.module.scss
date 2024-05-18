@@ -32,10 +32,10 @@ $circle_position: -31px;
 
     .experience_item {
       width: 50%;
-      max-width: 700px;
+      max-width: 800px;
       background-color: rgb(44, 44, 44);
       flex-shrink: 1;
-      border-radius: 8px;
+      border-radius: 6px;
       padding: .8rem 1.2rem;
       margin: 0 -1rem;
       position: relative;
@@ -53,6 +53,15 @@ $circle_position: -31px;
           stroke-dasharray: 1000;
           stroke-dashoffset: 0;
         }
+      }
+    }
+  }
+
+  // --- Responsive ---
+  @include break-max(768px) {
+    .experience_row {
+      &.right svg {
+        left: -28px;
       }
     }
   }
