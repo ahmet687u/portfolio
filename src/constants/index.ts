@@ -1,4 +1,4 @@
-import type { IShareButton, TNavbarLinks, IServiceCards } from "@/types";
+import type { IShareButton, TNavbarLinks, IPortfolioCards } from "@/types";
 
 import { SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -34,7 +34,7 @@ export const aboutText = [
   `Bu süreçte, sadece kod yazmakla kalmayıp, aynı zamanda tasarım ve kullanılabilirlik konularına da önem verdim. Kullanıcı deneyimini en üst düzeye çıkarmak için çeşitli araçlar ve teknikler kullanarak, estetik ve kullanıcı dostu arayüzler oluşturdum. Bu sayede, kullanıcıların web uygulamalarını daha kolay ve keyifli bir şekilde kullanmalarını sağladım.`
 ]
 
-export const serviceCards: IServiceCards[] = [
+export const portfolioCards: IPortfolioCards[] = [
   {
     title: "WEBOVA",
     color: "#227093",
@@ -59,5 +59,12 @@ export const serviceCards: IServiceCards[] = [
     color: "#b33939",
     link: "https://lenaoptik.com.tr/",
     description: `HTML, CSS, JavaScript ve TypeScript kullanarak geliştirdiğim bu uygulamada, aynı zamanda Laravel Blade templating'i ile çalışarak hem frontend hem de backend dünyasını keşfettim. Kullanıcı deneyimini öncelik edinen bir yaklaşımla, hem görünüm hem de işlevsellik arasında mükemmel bir denge sağladım. Laravel Blade templating'i ile her sayfa ve öğe tutarlı bir tasarımla donatıldı, JavaScript ve TypeScript ile güçlendirildi. Bu projede çalışırken, hem Laravel hem de frontend teknolojileri hakkında yeni bilgiler edinme fırsatı buldum. Hem frontend hem de backend dünyasına aynı anda adım atarak, kendimi sürekli olarak geliştirmeye yönelik çalışmalarım devam etmektedir.`
+  }
+]
+
+
+export const experiences = [
+  {
+    
   }
 ]

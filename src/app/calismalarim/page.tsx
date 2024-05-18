@@ -1,8 +1,8 @@
 
 export default function Services() {
   return (
-    <div>
+    <section className="page">
       Çalışmalarım
-    </div>
+    </section>
   )
 }
