@@ -15,9 +15,6 @@ export default function About() {
       ))}
 
       {/* experience section */}
-      <header className="title">
-        <h3>Tecrübelerim</h3>
-      </header>
       <PortfolioSection />
     </section>
   );
