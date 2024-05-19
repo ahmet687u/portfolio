@@ -1,5 +1,5 @@
+import PortfolioSection from "@/components/about/portfolio/PortfolioSection";
 import { aboutText } from "@/constants";
-import ExperienceSection from "@/components/home/Experience";
 
 export default function About() {
   return (
@@ -18,8 +18,7 @@ export default function About() {
       <header className="title">
         <h3>Tecrübelerim</h3>
       </header>
-
-      {/* <ExperienceSection /> */}
+      <PortfolioSection />
     </section>
   );
 }
