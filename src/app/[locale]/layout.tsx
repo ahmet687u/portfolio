@@ -13,7 +13,7 @@ export default function RootLayout({
     <>
       <Navbar locale={params.locale} />
       {children}
-      <Footer />
+      <Footer locale={params.locale} />
     </>
   );
 }

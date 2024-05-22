@@ -1,0 +1,21 @@
+{
+  "home": {
+    "banner": {
+      "title": "Merhaba ben Ahmet 🖐️",
+      "job": "Front End Developer",
+      "text": "Web Geliştirme Yolculuğuna Hoş Geldiniz! İşlevsellikten Tasarıma, Kodlama Sanatıyla Sınırları Zorluyorum. Dijital Dünyayı Yeniden Şekillendirirken, İhtiyaçlarınıza Özel Çözümler Sunuyorum. Hayallerinizi Kodlarla Gerçeğe Dönüştürmek İçin Birlikte Çalışalım!"
+    },
+    "aboutSection": {
+      "title": "Hakkımda"
+    },
+    "services": {
+      "title": "Tecrübelerim",
+      "paragrafs": [
+        "Front-end web geliştirme alanına olan ilgim sadece bir hobi değil, aynı zamanda kariyerimdeki odak noktam. Genel anlamda Next.js, React ve TypeScript gibi modern teknolojilere hakimim ve bu alanda kendimi sürekli olarak ileri taşımak için çabalıyorum. Her geçen gün yeni bir şeyler öğrenmeye ve yeteneklerimi geliştirmeye odaklanıyorum. Bu sayede, web geliştirme alanındaki gelişmeleri yakından takip ediyor ve en son teknolojileri uygulama fırsatı buluyorum.",
+        "Ayrıca, Laravel'in sağladığı güçlü backend altyapısını da çok iyi bir şekilde kullanabiliyorum. Laravel ile geliştirilmiş birçok projede yer aldım ve bu projelerin ön uç kısımlarını React veya Next.js gibi teknolojilerle entegre ederek, kullanıcı dostu ve performansı yüksek web uygulamaları oluşturdum. Laravel'in sunduğu güçlü yapıya ek olarak, blade şablon motorunu da etkin bir şekilde kullanarak, web uygulamalarının ön yüzünü tasarlayıp geliştirdim.",
+        "Bu süreçte, sadece kod yazmakla kalmayıp, aynı zamanda tasarım ve kullanılabilirlik konularına da önem verdim. Kullanıcı deneyimini en üst düzeye çıkarmak için çeşitli araçlar ve teknikler kullanarak, estetik ve kullanıcı dostu arayüzler oluşturdum. Bu sayede, kullanıcıların web uygulamalarını daha kolay ve keyifli bir şekilde kullanmalarını sağladım."
+      ]
+    }
+  },
+  "about": {}
+}

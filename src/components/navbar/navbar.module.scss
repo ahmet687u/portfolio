@@ -6,8 +6,9 @@
   padding: 2rem 2.5rem;
   height: $navbar-height;
 
-  .title {
+  .logo {
     font-size: 1.5rem;
+    color: $brown-color-first;
   }
 
   ul {
@@ -15,21 +16,19 @@
 
     &.contact {
       a {
-        transition: all .2s;
-
-        @include rounded-item(40px) {
-          border: 1px solid $brown-color-first;
-          color: $brown-color-first;
-
-          &:hover {
-            background-color: $brown-color-first;
-            color: $body-background-color;
+        &:has(:not(img)) {
+          transition: all .2s;
+  
+          @include rounded-item(40px) {
+            border: 1px solid $brown-color-first;
+            color: $brown-color-first;
+  
+            &:hover {
+              background-color: $brown-color-first;
+              color: $body-background-color;
+            }
           }
         }
-      }
-
-      img {
-        border-radius: 50%;
       }
     }
 

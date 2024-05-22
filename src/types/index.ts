@@ -1,10 +1,13 @@
 import type { IconType } from "react-icons";
 import type { MotionValue } from "framer-motion";
 
+export type TKeysEnum<T extends string | number | symbol> = {
+  [Prop in string as T]: any;
+};
+
 export type TNavbarLinks = {
   route: string;
-  label: string;
-}
+} & TKeysEnum<TLocales>
 
 export interface IShareButton {
   Icon: IconType;
@@ -46,7 +49,3 @@ export interface ILocalePageProps {
     locale: TLocales
   }
 }
-
-export type TKeysEnum<T extends string | number | symbol> = {
-  [Prop in string as T]: T;
-};

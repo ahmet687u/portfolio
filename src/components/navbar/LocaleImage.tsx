@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import type { TKeysEnum, TLocales } from "@/types";
+import Image from "next/image";
 import { LOCALES } from "@/constants";
 import { usePathname } from "next/navigation";
+import type { TKeysEnum, TLocales } from "@/types";
 
 const antiLocale: TKeysEnum<TLocales> = {
   en: "tr",
@@ -16,11 +16,11 @@ const LocaleImage = ({ locale }: { locale: TLocales }) => {
   const prefix = pathname.split("/").slice(2).join("");
 
   return (
-    <Link href={`/${antiLocale[locale]}/${prefix}`}>
+    <Link href={`/${antiLocale[locale]}/${prefix}`} className="flex align-center">
       {LOCALES.includes(locale) && (
         <Image
-          width={40}
-          height={40}
+          width={35}
+          height={25}
           alt={locale}
           src={`/${antiLocale[locale]}.jpg`}
         />

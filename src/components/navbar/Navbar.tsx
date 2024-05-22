@@ -1,6 +1,5 @@
 import Menu from "./Menu";
 import Link from "next/link";
-import Image from "next/image";
 import LocaleImage from "./LocaleImage";
 import type { TLocales } from "@/types";
 import styles from "./navbar.module.scss";
@@ -16,14 +15,12 @@ export default function Navbar({ locale }: { locale: TLocales }) {
     <nav className={`${styles.navbar} flex align-center`}>
       <Menu locale={locale} />
 
-      <Link href="/" className={`${font.className} title`}>
+      <Link href={`/${locale}`} className={`${font.className} logo`}>
         Ahmet BIYIKLI
       </Link>
 
-      <ul className="flex contact">
-        <li className="rounded-img">
-          <LocaleImage locale={locale} />
-        </li>
+      <ul className="flex contact align-center">
+        <LocaleImage locale={locale} />
 
         <li>
           <Link href="https://github.com/ahmet687u">

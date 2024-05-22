@@ -12,15 +12,18 @@ export const LOCALES: Array<TLocales> = ["tr", "en"]
 export const navbarLinks: TNavbarLinks[] = [
   {
     route: "/",
-    label: "Anasayfa"
+    tr: "Anasayfa",
+    en: "Home",
   },
   {
     route: "/hakkimda",
-    label: "Hakkımda"
+    tr: "Hakkımda",
+    en: "About",
   },
   {
     route: "/calismalarim",
-    label: "Çalışmalarım"
+    tr: "Çalışmalarım",
+    en: "Portfolio",
   }
 ]
 
