@@ -16,6 +16,7 @@
     &.contact {
       a {
         transition: all .2s;
+
         @include rounded-item(40px) {
           border: 1px solid $brown-color-first;
           color: $brown-color-first;
@@ -25,6 +26,10 @@
             color: $body-background-color;
           }
         }
+      }
+
+      img {
+        border-radius: 50%;
       }
     }
 
@@ -40,5 +45,5 @@
     ul {
       display: none;
     }
-  }  
+  }
 }

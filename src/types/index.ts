@@ -26,10 +26,6 @@ export interface ICardItemProps extends IPortfolioCards {
   progress: MotionValue<number>
 }
 
-// export interface IExperience extends Omit<IPortfolioCards, "color"> {
-
-// }
-
 export interface IExperience {
   title: string;
   date?: string;
@@ -42,3 +38,15 @@ export interface ICogProps extends React.DetailedHTMLProps<React.HTMLAttributes<
   size: number;
   ledgePiece: number;
 }
+
+export type TLocales = "tr" | "en"
+
+export interface ILocalePageProps {
+  params: {
+    locale: TLocales
+  }
+}
+
+export type TKeysEnum<T extends string | number | symbol> = {
+  [Prop in string as T]: T;
+};

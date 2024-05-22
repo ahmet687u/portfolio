@@ -1,4 +1,4 @@
-import type { IShareButton, TNavbarLinks, IPortfolioCards } from "@/types";
+import type { IShareButton, TNavbarLinks, IPortfolioCards, TLocales } from "@/types";
 
 import { SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -6,6 +6,8 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaReact } from "react-icons/fa";
 
+export const DEFAULT_LOCALES: TLocales = "tr"
+export const LOCALES: Array<TLocales> = ["tr", "en"]
 
 export const navbarLinks: TNavbarLinks[] = [
   {
