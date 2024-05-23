@@ -1,14 +1,16 @@
 import { aboutText } from "@/constants";
+import type { TLocales } from "@/types";
+import { getLocaleJson } from "@/utils/getLocaleJson";
 import PortfolioSection from "@/components/about/portfolio/PortfolioSection";
 
-const AboutPage = () => {
+const AboutPage = ({ params }: { params: { locale: TLocales } }) => {
   return (
     <section className="page container">
       <header className="title">
-        <h1>HAKKIMDA</h1>
+        <h1>{getLocaleJson()[params.locale].about.title}</h1>
       </header>
 
-      {aboutText.map((txt, i) => (
+      {getLocaleJson()[params.locale].about.paragrafs.map((txt, i) => (
         <p key={i} className="text">
           {txt}
         </p>

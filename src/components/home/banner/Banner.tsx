@@ -1,23 +1,20 @@
+import type { TLocales } from "@/types";
 import styles from "./banner.module.scss";
 import ExperienceCircle from "@/components/experience/ExperienceCircle";
+import { getLocaleJson } from "@/utils/getLocaleJson";
 
-export default function Banner() {
+export default function Banner({ locale }: { locale: TLocales }) {
   return (
     <div className={styles.banner}>
       <div className="left item">
         <header>
-          <h1>Hı I am Ahmet. </h1>
-          <h5>I am a Front End Developer</h5>
+          <h1>{getLocaleJson()[locale].home.banner.title}</h1>
+          <h5>{getLocaleJson()[locale].home.banner.job}</h5>
         </header>
 
-        <p className="text">
-          Web Geliştirme Yolculuğuna Hoş Geldiniz! İşlevsellikten Tasarıma,
-          Kodlama Sanatıyla Sınırları Zorluyorum. Dijital Dünyayı Yeniden
-          Şekillendirirken, İhtiyaçlarınıza Özel Çözümler Sunuyorum.
-          Hayallerinizi Kodlarla Gerçeğe Dönüştürmek İçin Birlikte Çalışalım!
-        </p>
+        <p className="text">{getLocaleJson()[locale].home.banner.text}</p>
 
-        <button>DOWNLOAD CV</button>
+        <button>{getLocaleJson()[locale].home.banner.buttonText}</button>
       </div>
 
       <div className="right item my-center">

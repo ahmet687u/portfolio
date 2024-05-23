@@ -7,6 +7,8 @@ import { aboutText } from "@/constants";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import Cog from "@/components/about/Cog";
+import type { TLocales } from "@/types";
+import { getLocaleJson } from "@/utils/getLocaleJson";
 
 const variants = {
   hidden: { x: -100 },
@@ -29,7 +31,7 @@ const item = {
   show: { opacity: 1, y: 100 },
 };
 
-const AboutSection = () => {
+const AboutSection = ({ locale }: {locale: TLocales}) => {
   const { scrollYProgress } = useScroll();
 
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360], {
@@ -39,7 +41,7 @@ const AboutSection = () => {
   return (
     <section className={`container ${styles.about}`}>
       <header className="title">
-        <h1>Hakkımda</h1>
+        <h1>{getLocaleJson()[locale].about.title}</h1>
       </header>
 
       <motion.div
@@ -74,7 +76,7 @@ const AboutSection = () => {
 
       <motion.div variants={container} initial="hidden" animate="show">
         <Link href="/hakkimda">
-          {aboutText.slice(0, 2).map((text, i) => (
+          {getLocaleJson()[locale].about.paragrafs.slice(0, 2).map((text, i) => (
             <motion.p
               key={text}
               variants={item}

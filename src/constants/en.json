@@ -3,19 +3,23 @@
     "banner": {
       "title": "Hı. I am Ahmet 🖐️",
       "job": "I am a Front End Developer",
-      "text": "Welcome to Web Development Journey! From Functionality to Design, I Push the Limits with the Art of Coding. While Reshaping the Digital World, I Offer Customized Solutions for Your Needs. Let's Work Together to Turn Your Dreams into Reality with Code!"
-    },
-    "aboutSection": {
-      "title": "About Me"
+      "text": "Welcome to Web Development Journey! From Functionality to Design, I Push the Limits with the Art of Coding. While Reshaping the Digital World, I Offer Customized Solutions for Your Needs. Let's Work Together to Turn Your Dreams into Reality with Code!",
+      "buttonText": "DOWNLOAD CV"
     },
     "services": {
-      "title": "My Experience",
-      "paragrafs": [
-        "My interest in front-end web development is not only a hobby but also my career focus. In general, I have a good command of modern technologies such as Next.js, React and TypeScript, and I am constantly striving to advance myself in this field. I focus on learning new things and improving my skills every day. In this way, I closely follow the developments in the field of web development and have the opportunity to apply the latest technologies.",
-        "I am also able to use the powerful backend infrastructure provided by Laravel very well. I have been involved in many projects developed with Laravel and have integrated the front-end parts of these projects with technologies such as React or Next.js to create user-friendly and high performance web applications. In addition to the powerful structure offered by Laravel, I have designed and developed the front-end of web applications by using the blade template engine effectively.",
-        "In this process, I not only wrote code, but also paid attention to design and usability issues. I created aesthetic and user-friendly interfaces using various tools and techniques to maximize the user experience. In this way, I made it easier and more enjoyable for users to use web applications."
-      ]
+      "title": "My Experience"
     }
   },
-  "about": {}
+  "about": {
+    "title": "About Me",
+    "paragrafs": [
+      "My interest in front-end web development is not only a hobby but also my career focus. In general, I have a good command of modern technologies such as Next.js, React and TypeScript, and I am constantly striving to advance myself in this field. I focus on learning new things and improving my skills every day. In this way, I closely follow the developments in the field of web development and have the opportunity to apply the latest technologies.",
+      "I am also able to use the powerful backend infrastructure provided by Laravel very well. I have been involved in many projects developed with Laravel and have integrated the front-end parts of these projects with technologies such as React or Next.js to create user-friendly and high performance web applications. In addition to the powerful structure offered by Laravel, I have designed and developed the front-end of web applications by using the blade template engine effectively.",
+      "In this process, I not only wrote code, but also paid attention to design and usability issues. I created aesthetic and user-friendly interfaces using various tools and techniques to maximize the user experience. In this way, I made it easier and more enjoyable for users to use web applications."
+    ]
+  },
+  "footer": {
+    "contact": "Contact Me",
+    "quick_link": "Quick Link"
+  }
 }
