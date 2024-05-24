@@ -8,10 +8,10 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import type { TLocales } from "@/types";
 import { getLocaleJson } from "@/utils/getLocaleJson";
 
-const variants = {
-  hidden: { x: -100 },
-  transition: { ease: "easeOut", duration: 0.9, type: "spring" },
-};
+// const variants = {
+//   hidden: { x: -100 },
+//   transition: { ease: "easeOut", duration: 0.9, type: "spring" },
+// };
 
 const container = {
   hidden: { opacity: 0 },
@@ -36,9 +36,9 @@ const AboutSection = ({ locale }: { locale: TLocales }) => {
     clamp: false,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], [0, 280], {
-    clamp: true,
-  });
+  // const x = useTransform(scrollYProgress, [0, 1], [0, 280], {
+  //   clamp: true,
+  // });
 
   return (
     <section className={`container ${styles.about}`}>
@@ -48,7 +48,7 @@ const AboutSection = ({ locale }: { locale: TLocales }) => {
 
       <motion.div
         className={`flex align-center ${styles.ml}`}
-        style={{ position: "relative", x }}
+        style={{ position: "relative" }}
       ></motion.div>
 
       <motion.div variants={container} initial="hidden" animate="show">

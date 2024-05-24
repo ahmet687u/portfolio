@@ -7,6 +7,7 @@ import styles from "./navbar.module.scss";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Dancing_Script } from "next/font/google";
+import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const font = Dancing_Script({ subsets: ["latin"] });
 
@@ -33,6 +34,8 @@ export default function Navbar({ locale }: { locale: TLocales }) {
           </Link>
         </li>
       </ul>
+
+      <ResponsiveNavbar />
     </nav>
   );
 }

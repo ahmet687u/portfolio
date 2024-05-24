@@ -1,0 +1,49 @@
+@use "../../../scss/mixins/"as *;
+@use "../../../scss/variables/"as *;
+
+.menu_container {
+  display: none;
+
+  .menu {
+    @include rounded-item(50px) {
+      background-color: #fff;
+			color: #000;
+			font-size: 2em;
+    }
+  }
+
+	.menu_list {
+		top: $navbar-height;
+
+		:is(&, .wrapper) {
+			position: absolute;
+			left: 0;
+			width: 300px;
+			max-width: 100%;
+			z-index: 9;
+			transition: all .4s;
+		}
+
+		.wrapper {
+			top: 0;
+			height: 100%;
+			background-color: #fff;
+			clip-path: circle(0px at 40px 40px);
+		}
+		
+		&.show {
+			height: calc(100vh - $navbar-height);
+			transition-delay: .6s;
+
+			.wrapper {
+				clip-path: circle(150% at 40px 40px);
+				transition-delay: .3s;
+			}
+		}
+	}
+
+	// --- Responsive ---
+  @include break-max(900px) {
+    display: block;
+  }
+}
