@@ -3,6 +3,7 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  column-gap: 20px;
   overflow: hidden;
   margin-top: 3rem;
 

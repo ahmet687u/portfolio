@@ -37,11 +37,6 @@ export interface IExperience {
   link?: URL | string;
 }
 
-export interface ICogProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {
-  size: number;
-  ledgePiece: number;
-}
-
 export type TLocales = "tr" | "en"
 
 export interface ILocalePageProps {
