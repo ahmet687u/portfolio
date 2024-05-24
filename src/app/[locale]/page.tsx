@@ -12,8 +12,8 @@ export default function Home({ params }: { params: { locale: TLocales } }) {
       <Banner locale={params.locale} />
 
       <section className="container card-container">
-        {homeCards.map((card) => (
-          <Card {...card} locale={params.locale} />
+        {homeCards.map((card, index) => (
+          <Card key={index} {...card} locale={params.locale} />
         ))}
       </section>
 
