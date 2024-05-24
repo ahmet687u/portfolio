@@ -44,3 +44,13 @@ export interface ILocalePageProps {
     locale: TLocales
   }
 }
+
+export interface IHomeCardProps {
+  text: string;
+  title: string;
+  color?: string;
+}
+
+export type THomeCardWithLocale = {
+  [Prop in keyof IHomeCardProps]: TKeysEnum<TLocales>
+} & { icon: any }

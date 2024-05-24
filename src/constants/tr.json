@@ -8,7 +8,12 @@
     },
     "services": {
       "title": "Tecrübelerim"
-    }
+    },
+    "card": [
+      { "title": "Web Geliştirme", "text": "lorem ispum dolor sit amet" },
+      { "title": "Mobil Geliştirme", "text": "lorem ispum dolor sit amet" },
+      { "title": "Pixel Perfect", "text": "lorem ispum dolor sit amet" }
+    ]
   },
   "about": {
     "title": "Hakkımda",

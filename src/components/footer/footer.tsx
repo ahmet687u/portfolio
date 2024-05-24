@@ -4,7 +4,7 @@ import styles from "./footer.module.scss";
 import { IoLogoGithub } from "react-icons/io";
 import { CiMail, CiLinkedin } from "react-icons/ci";
 import { TLocales } from "@/types";
-import Menu from "../navbar/Menu";
+import Menu from "../shared/navbar/Menu";
 import { getLocaleJson } from "@/utils/getLocaleJson";
 
 const Footer = ({ locale }: { locale: TLocales }) => {

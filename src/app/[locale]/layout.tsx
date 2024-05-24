@@ -1,5 +1,5 @@
 import type { ILocalePageProps } from "@/types";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/shared/navbar/Navbar";
 import Footer from "@/components/footer/footer";
 
 export default function RootLayout({

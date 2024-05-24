@@ -1,0 +1,15 @@
+@use "../../../scss/mixins/" as *;
+@use "../../../scss/variables/" as *;
+
+.card {
+  padding: .7rem;
+  text-align: center;
+  border-radius: .5rem;
+  background-color: $card-color;
+
+  svg {
+    font-size: 5em;
+    color: $color-red;
+    margin-bottom: 1rem;
+  }
+}

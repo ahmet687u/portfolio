@@ -8,7 +8,12 @@
     },
     "services": {
       "title": "My Experience"
-    }
+    },
+    "card": [
+      { "title": "Web Development", "text": "lorem ispum dolor sit amet" },
+      { "title": "Mobil Development", "text": "lorem ispum dolor sit amet" },
+      { "title": "Pixel Perfect", "text": "lorem ispum dolor sit amet" }
+    ]
   },
   "about": {
     "title": "About Me",
