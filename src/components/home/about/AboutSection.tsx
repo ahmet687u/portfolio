@@ -25,8 +25,8 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, x: 100 },
-  show: { opacity: 1, x: 100 },
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 100 },
 };
 
 const AboutSection = ({ locale }: { locale: TLocales }) => {
@@ -49,8 +49,7 @@ const AboutSection = ({ locale }: { locale: TLocales }) => {
       <motion.div
         className={`flex align-center ${styles.ml}`}
         style={{ position: "relative", x }}
-      >
-      </motion.div>
+      ></motion.div>
 
       <motion.div variants={container} initial="hidden" animate="show">
         <Link href={`/${locale}/hakkimda`}>
@@ -60,8 +59,8 @@ const AboutSection = ({ locale }: { locale: TLocales }) => {
               <motion.p
                 key={text}
                 variants={item}
-                whileInView={{ y: 0 }}
                 className="text"
+                whileInView={{ y: 0 }}
               >
                 {text} {i === 1 ? "..." : ""}
               </motion.p>

@@ -6,8 +6,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaReact, } from "react-icons/fa";
 import { TbDeviceMobileCode, TbDeviceDesktopCode } from "react-icons/tb";
-import { GiArrowScope, GiOnTarget } from "react-icons/gi";
-import { TbTargetArrow } from "react-icons/tb";
+import { GiOnTarget } from "react-icons/gi";
 
 export const DEFAULT_LOCALES: TLocales = "tr"
 export const LOCALES: Array<TLocales> = ["tr", "en"]
