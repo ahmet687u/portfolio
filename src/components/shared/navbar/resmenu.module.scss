@@ -5,10 +5,10 @@
   display: none;
 
   .menu {
-    @include rounded-item(50px) {
-      background-color: #fff;
-			color: #000;
-			font-size: 2em;
+    @include rounded-item(45px) {
+			background-color: $brown-color-first;
+			color: #fff;
+			font-size: 1.7em;
     }
   }
 
@@ -22,12 +22,24 @@
 		border-radius: 1.5rem;
     width: 0;
     height: 0;
-		padding: 1.2rem;
+		overflow: hidden;
 
 		li{
-			margin: 1rem 0;
+			//margin: 1rem 0;
+			&:not(.not_pad) {
+				padding: 1.5rem;
+				font-size: 1.2rem;
+			}
+		}
+	}
 
-			font-size: 1.2rem;
+	.footer {
+		ul {
+			padding: 0 3rem;
+
+			a{
+				margin: .5rem 0;
+			}
 		}
 	}
 

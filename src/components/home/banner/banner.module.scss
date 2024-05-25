@@ -6,7 +6,7 @@
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: calc(100vh - $navbar-height);
+  min-height: calc(100vh - $navbar-height);
 
   .left {
     align-self: center;
@@ -21,6 +21,10 @@
     }
   }
 
+  .right {
+    overflow: hidden;
+  }
+
   button {
     @include button() {
       margin-top: 1rem;
@@ -32,6 +36,14 @@
 
     .item {
       grid-column: span 2;
+    }
+  }
+
+  @include break-max(500px) {
+    row-gap: 15px;
+
+    .right {
+      height: 300px;
     }
   }
 }

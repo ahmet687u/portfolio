@@ -2,12 +2,16 @@
 @use "./variables/" as *;
 
 :root {
-  --page-font-size: $page-font-size;
+  --page-font-size: 16px;
 }
 
 ::selection {
   color: $default-text-color;
   background-color: $brown-color-first;
+}
+
+html {
+  font-size: var(--page-font-size);
 }
 
 body {
@@ -24,12 +28,6 @@ body {
   font-size: 1rem;
   line-height: 2rem;
   margin: 1rem 0;
-}
-
-@include break-max(768px) {
-  :root {
-    font-size: $responsive-font-size;
-  }
 }
 
 .flex {
@@ -55,7 +53,7 @@ body {
 .title {
   font-size: 1.8rem;
   text-align: center;
-  margin: 2rem 0 5rem 0;
+  margin: 2rem 0 3rem 0;
   letter-spacing: .3rem;
   text-align: center;
 
@@ -104,5 +102,12 @@ body {
     article {
       grid-column: span 3;
     }
+  }
+}
+
+// --- Global Responsive ---
+@include break-max(768px) {
+  :root {
+    --page-font-size: 13px;
   }
 }

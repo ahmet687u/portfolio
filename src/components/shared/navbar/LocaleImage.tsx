@@ -21,7 +21,7 @@ const LocaleImage = ({ locale }: { locale: TLocales }) => {
         <Image
           width={35}
           height={25}
-          alt={locale}
+          alt={antiLocale[locale]}
           src={`/${antiLocale[locale]}.jpg`}
         />
       )}

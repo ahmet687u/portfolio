@@ -13,7 +13,7 @@ export default function ExperienceCircle() {
               key={index}
             >
               <div className={`${classes.anti_circle} my-center`}>
-                <Icon size="1.5rem" color="#fff" />
+                <Icon color="#fff" />
               </div>
             </div>
           ))}

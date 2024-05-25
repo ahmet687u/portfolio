@@ -34,6 +34,7 @@
         }
 
         svg {
+          font-size: 1.15em;
           transform: rotate(calc(-360deg / 8 * var(--i)));
         }
       }
@@ -41,13 +42,35 @@
   }
 
   // --- Responsive ---
-  @include break-max(900px) {
+  @include break-max(1024px) {
     .content {
       width: 350px;
       height: 350px;
 
-      .circle_item {
-        transform-origin: 195px !important;
+      .relative {
+        .circle_item {
+          transform-origin: 195px;
+        }
+      }
+    }
+  }
+
+  @include break-max(500px) {
+    .content {
+      width: 250px;
+      height: 250px;
+
+      .relative {
+        .circle_item {
+          width: 35px;
+          height: 35px;
+          transform-origin: 140px;
+          left: -6%;
+
+          svg {
+            font-size: 1.1em;
+          }
+        }
       }
     }
   }
