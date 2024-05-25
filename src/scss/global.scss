@@ -109,17 +109,68 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $body-background-color;
   width: 100%;
   height: 100vh;
   z-index: 10;
   display: grid;
   place-items: center;
+  overflow: hidden;
+  background-color: $body-background-color;
+
+  &-circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation: rotate-loading linear 4s infinite;
+
+    &-item {
+      position: absolute;
+      left: 37%;
+      width: 2px;
+      height: 100%;
+      opacity: .8;
+      transition: all .5s;
+      transform-origin: 15px;
+      background-color: #99887b;
+      transform: rotate(calc(360deg / 7 * var(--idc)));
+
+      &::after,
+      &::before {
+        @include rounded-item(15px, false) {
+          content: "";
+          position: absolute;
+          border: 1px solid #ad8769;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      &::before {
+        bottom: 100%;
+      }
+
+      &::after {
+        top: 100%;
+      }
+    }
+  }
 }
 
 // --- Global Responsive ---
 @include break-max(768px) {
   :root {
     --page-font-size: 13px;
+  }
+}
+
+
+@keyframes rotate-loading {
+  0%,
+  100% {
+    transform: rotate(-360deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
   }
 }
