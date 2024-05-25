@@ -47,7 +47,9 @@
   // --- Responsive ---
   @include break-max(900px) {
     ul {
-      display: none;
+      &:not(.not-none) {
+        display: none;
+      }
     }
   }
 }

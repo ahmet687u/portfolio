@@ -35,7 +35,7 @@ export default function Navbar({ locale }: { locale: TLocales }) {
         </li>
       </ul>
 
-      <ResponsiveNavbar />
+      <ResponsiveNavbar locale={locale} />
     </nav>
   );
 }
