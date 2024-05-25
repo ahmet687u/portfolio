@@ -33,34 +33,6 @@ export const experienceCircleIcons: IShareButton[] = [
   { Icon: FaHtml5 }, { Icon: FaCss3Alt }, { Icon: IoLogoJavascript }, { Icon: FaSass }, { Icon: FaBootstrap }, { Icon: FaReact }, { Icon: SiRedux }, { Icon: TbBrandNextjs }, { Icon: BiLogoTypescript }
 ]
 
-export const portfolioCards: IPortfolioCards[] = [
-  {
-    title: "WEBOVA",
-    color: "#227093",
-    link: "https://github.com/ahmet687u/webova",
-    description: `Bootstrap'a hafif bir alternatif olarak tasarladığım, SCSS kullanarak geliştirdiğim bir minik CSS çerçevesi hazırladım. Bu özel çerçeve, belirli projelerim için gereken özellikleri içerir ve kullanılmayan bileşenlerin gereksiz yükünü taşımadan daha optimize edilmiş bir stil oluşturma süreci sunar. Performansı ve kullanım kolaylığını ön planda tutar`
-  },
-  {
-    title: "F1RF1R",
-    color: "#218c74",
-    link: "https://github.com/ahmet687u/f1rf1r",
-    description: `Bu JavaScript kütüphanesi, bildirim mesajlarının ve popup iletişim kutularının oluşturulmasını kolaylaştırır. Kullanımı kolay ve esnek bir yapıya sahiptir, geliştiricilere web uygulamalarındaki bildirimler, onaylar ve diğer etkileşimli öğeleri hızlı bir şekilde uygulama ve özelleştirme imkanı sunar. Kütüphane, minimalist bir yaklaşım benimseyerek performansı ve entegrasyon kolaylığını ön planda tutar, işlevselliği ise asla kaybetmez`
-  },
-  {
-    title: "Datasurgery",
-    color: "#2c2c54",
-    description: `Bir web demo ürününün ön uç geliştirilmesinde yer aldım. Bu ürün, yapay zeka kullanarak tiroid kanserini tahmin etmeyi amaçlıyor. Görevlerim arasında, doktorların görüntülere çizim yaparak veriyi segmente etmelerini sağlayan bir görüntü işaretleme aracının uygulanması yer alıyordu. Bu araç, işaretlemelerin koordinatlarını yakalayıp bunları arka uca iletiyordu.
-
-    Ayrıca, uzman radyologların hastalarıyla uzaktan danışabilmelerini sağlayan bir mobil uygulama projesinde mobil geliştirici olarak görev aldım. Rollüm, kullanıcı arayüzlerinin uygulanması ve uygulamanın çeşitli cihazlar ve işletim sistemlerindeki işlevselliğinin sağlanmasıydı`
-  },
-  {
-    title: "Lena Optik",
-    color: "#b33939",
-    link: "https://lenaoptik.com.tr/",
-    description: `HTML, CSS, JavaScript ve TypeScript kullanarak geliştirdiğim bu uygulamada, aynı zamanda Laravel Blade templating'i ile çalışarak hem frontend hem de backend dünyasını keşfettim. Kullanıcı deneyimini öncelik edinen bir yaklaşımla, hem görünüm hem de işlevsellik arasında mükemmel bir denge sağladım. Laravel Blade templating'i ile her sayfa ve öğe tutarlı bir tasarımla donatıldı, JavaScript ve TypeScript ile güçlendirildi. Bu projede çalışırken, hem Laravel hem de frontend teknolojileri hakkında yeni bilgiler edinme fırsatı buldum. Hem frontend hem de backend dünyasına aynı anda adım atarak, kendimi sürekli olarak geliştirmeye yönelik çalışmalarım devam etmektedir.`
-  }
-]
-
 export const homeCards: THomeCardWithLocale[] = [
   {
     title: { tr: "Mobil Geliştirme", en: "Mobile Development" },
