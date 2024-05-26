@@ -13,6 +13,28 @@
       { "title": "Web Development", "text": "lorem ispum dolor sit amet" },
       { "title": "Mobil Development", "text": "lorem ispum dolor sit amet" },
       { "title": "Pixel Perfect", "text": "lorem ispum dolor sit amet" }
+    ],
+    "experience": [
+      {
+        "title": "Uşak Lisesi",
+        "date": "",
+        "job": "Student"
+      },
+      {
+        "title": "Mehmet Akif Ersoy Üniversitesi",
+        "date": "",
+        "job": "Student"
+      },
+      {
+        "title": "Marka Press",
+        "date": "",
+        "job": "Intern Front End Developer"
+      },
+      {
+        "title": "Datasurgery",
+        "date": "",
+        "job": "Front End Developer"
+      }
     ]
   },
   "about": {

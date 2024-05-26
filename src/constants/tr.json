@@ -13,6 +13,28 @@
       { "title": "Web Geliştirme", "text": "lorem ispum dolor sit amet" },
       { "title": "Mobil Geliştirme", "text": "lorem ispum dolor sit amet" },
       { "title": "Pixel Perfect", "text": "lorem ispum dolor sit amet" }
+    ],
+    "experience": [
+      {
+        "title": "Uşak Lisesi",
+        "date": "",
+        "job": "Öğrenci"
+      },
+      {
+        "title": "Mehmet Akif Ersoy Üniversitesi",
+        "date": "",
+        "job": "Öğrenci"
+      },
+      {
+        "title": "Marka Press",
+        "date": "",
+        "job": "Staj"
+      },
+      {
+        "title": "Datasurgery",
+        "date": "",
+        "job": "Front End Geliştirici"
+      }
     ]
   },
   "about": {

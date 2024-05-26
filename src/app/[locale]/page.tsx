@@ -25,7 +25,7 @@ export default function Home({ params }: { params: { locale: TLocales } }) {
         <header className="title">
           <h1>{getLocaleJson()[params.locale].home.services.title}</h1>
         </header>
-        <ExperienceSection />
+        <ExperienceSection locale={params.locale} />
       </section>
     </section>
   );
