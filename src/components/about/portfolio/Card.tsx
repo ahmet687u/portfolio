@@ -23,7 +23,7 @@ const CardItem = (props: ICardItemProps): JSX.Element => {
         className={styles.card}
         style={{
           scale,
-          top: `calc(-10% + ${props.index * 70}px)`,
+          top: `calc(-10% + ${props.index * 60}px)`,
         }}
       >
         <h2>{props.title}</h2>
