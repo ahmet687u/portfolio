@@ -3,7 +3,7 @@ import type { TLocales } from "@/types";
 import Card from "@/components/shared/card/Card";
 import Banner from "@/components/home/banner/Banner";
 import { getLocaleJson } from "@/utils/getLocaleJson";
-import ExperienceSection from "@/components/home/Experience";
+import ExperienceSection from "@/components/home/experience/Experience";
 import AboutSection from "@/components/home/about/AboutSection";
 
 export default function Home({ params }: { params: { locale: TLocales } }) {

@@ -1,0 +1,28 @@
+@use '../../../scss/mixins/'as *;
+@use '../../../scss/variables/'as *;
+
+.experince_container {
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: top;
+  }
+
+  // --- Responsive ---
+  @include break-max(768px) {
+    .experience_row {
+      &.right svg {
+        left: -28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@use '../../../scss/variables/' as *;
+
+.experience_row {
+  margin: 1rem 0;
+  width: clamp(250px, 100%, 800px);
+  position: relative;
+
+  &.right {
+    justify-content: end;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(calc(-50% + 31px), -50%);
+
+    circle {
+      stroke: #fff;
+      stroke-width: 2;
+      fill: $body_background_color;
+    }
+  }
+
+  .experience_item {
+    width: 50%;
+    max-width: 800px;
+    background-color: rgb(44, 44, 44);
+    flex-shrink: 1;
+    border-radius: 6px;
+    padding: .8rem 1.2rem;
+    margin: 0 -1rem;
+
+    div {
+      justify-content: space-between;
+
+      p {
+        &:nth-child(1) {
+          font-weight: 500;
+        }
+
+        &:nth-child(2) {
+          font-size: .9rem;
+        }
+      }
+    }
+
+    .small {
+      margin-top: .5rem;
+      font-size: .8rem;
+    }
+  }
+}
