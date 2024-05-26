@@ -60,7 +60,7 @@ export const homeExperience: IHomeExperience[] = [
   },
   {
     "title": "Marka Press",
-    "date": "05-2021/08/2021",
+    "date": "05-2021/08-2021",
     "job": "Staj"
   },
   {
