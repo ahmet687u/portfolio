@@ -156,6 +156,10 @@ body {
   }
 }
 
+.not-found{
+  min-height: 100vh;
+}
+
 // --- Global Responsive ---
 @include break-max(768px) {
   :root {

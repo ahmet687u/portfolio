@@ -1,3 +1,4 @@
+@use '../../../scss/mixins/' as *;
 @use '../../../scss/variables/' as *;
 
 .experience_row {
@@ -26,7 +27,6 @@
     width: 50%;
     max-width: 800px;
     background-color: rgb(44, 44, 44);
-    flex-shrink: 1;
     border-radius: 6px;
     padding: .8rem 1.2rem;
     margin: 0 -1rem;
@@ -48,6 +48,23 @@
     .small {
       margin-top: .5rem;
       font-size: .8rem;
+    }
+  }
+
+  // --- Responsive ---
+  @include break-max(768px) {
+    svg {
+      left: -15px;
+      transform: translateY(-50%);
+    }
+
+    &.right {
+      justify-content: start;
+    }
+
+    .experience_item {
+      width: 100%;
+      margin-left: 20px;
     }
   }
 }
