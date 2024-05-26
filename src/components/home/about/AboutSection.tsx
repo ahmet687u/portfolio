@@ -34,12 +34,7 @@ const AboutSection = () => {
         <h1>Hakkımda</h1>
       </header>
 
-      <motion.div
-        className={`flex align-center ${styles.ml}`}
-        style={{ position: "relative" }}
-      ></motion.div>
-
-      <motion.div variants={container} initial="hidden" animate="show">
+      <motion.div className={styles.about_text} variants={container} initial="hidden" animate="show">
         <Link href="/hakkimda">
           {aboutParagrafs.slice(0, 2).map((text, i) => (
               <motion.p

@@ -1,14 +1,17 @@
 @use "../../../scss/mixins/" as *;
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  column-gap: 20px;
-  overflow: hidden;
   margin-top: 3rem;
 
   header {
     grid-column: span 2;
+  }
+
+  .about_text {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
   }
 
   @include break-max(900px) {
