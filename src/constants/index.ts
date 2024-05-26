@@ -65,7 +65,7 @@ export const homeExperience: IHomeExperience[] = [
   },
   {
     "title": "Datasurgery",
-    "date": "05-2023/08/2023",
+    "date": "05-2023/08-2023",
     "job": "Front End Geliştirici"
   }
 ]
