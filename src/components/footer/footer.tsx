@@ -1,17 +1,15 @@
 import Link from "next/link";
 import styles from "./footer.module.scss";
 
+import Menu from "../shared/navbar/Menu";
 import { IoLogoGithub } from "react-icons/io";
 import { CiMail, CiLinkedin } from "react-icons/ci";
-import { TLocales } from "@/types";
-import Menu from "../shared/navbar/Menu";
-import { getLocaleJson } from "@/utils/getLocaleJson";
 
-const Footer = ({ locale }: { locale: TLocales }) => {
+const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.section}>
-        <h3>{getLocaleJson()[locale].footer.contact}</h3>
+        <h3>Bana  Ulaşın</h3>
         <Link
           href="mailto:biyikliahmet72@gmail.com"
           className="flex align-center"
@@ -33,9 +31,9 @@ const Footer = ({ locale }: { locale: TLocales }) => {
         </ul>
       </div>
       <div className={styles.section}>
-        <h3>{getLocaleJson()[locale].footer.quick_link}</h3>
+        <h3>Hızlı Link</h3>
         <ul>
-          <Menu locale={locale} col={true} />
+          <Menu col={true} />
         </ul>
       </div>
     </footer>

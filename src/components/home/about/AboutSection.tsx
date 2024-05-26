@@ -2,16 +2,8 @@
 
 import Link from "next/link";
 import styles from "./about.module.scss";
-
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-
-import type { TLocales } from "@/types";
-import { getLocaleJson } from "@/utils/getLocaleJson";
-
-// const variants = {
-//   hidden: { x: -100 },
-//   transition: { ease: "easeOut", duration: 0.9, type: "spring" },
-// };
+import { motion, useScroll, useTransform } from "framer-motion";
+import { aboutParagrafs } from "@/constants";
 
 const container = {
   hidden: { opacity: 0 },
@@ -29,21 +21,17 @@ const item = {
   show: { opacity: 1, y: 100 },
 };
 
-const AboutSection = ({ locale }: { locale: TLocales }) => {
+const AboutSection = () => {
   const { scrollYProgress } = useScroll();
 
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 720], {
     clamp: false,
   });
 
-  // const x = useTransform(scrollYProgress, [0, 1], [0, 280], {
-  //   clamp: true,
-  // });
-
   return (
     <section className={`container ${styles.about}`}>
       <header className="title">
-        <h1>{getLocaleJson()[locale].about.title}</h1>
+        <h1>Hakkımda</h1>
       </header>
 
       <motion.div
@@ -52,10 +40,8 @@ const AboutSection = ({ locale }: { locale: TLocales }) => {
       ></motion.div>
 
       <motion.div variants={container} initial="hidden" animate="show">
-        <Link href={`/${locale}/hakkimda`}>
-          {getLocaleJson()
-            [locale].about.paragrafs.slice(0, 2)
-            .map((text, i) => (
+        <Link href="/hakkimda">
+          {aboutParagrafs.slice(0, 2).map((text, i) => (
               <motion.p
                 key={text}
                 variants={item}

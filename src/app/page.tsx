@@ -1,31 +1,29 @@
 import { homeCards } from "@/constants";
-import type { TLocales } from "@/types";
 import Card from "@/components/shared/card/Card";
 import Banner from "@/components/home/banner/Banner";
-import { getLocaleJson } from "@/utils/getLocaleJson";
-import ExperienceSection from "@/components/home/experience/Experience";
 import AboutSection from "@/components/home/about/AboutSection";
+import ExperienceSection from "@/components/home/experience/Experience";
 
-export default function Home({ params }: { params: { locale: TLocales } }) {
+export default function Home() {
   return (
     <section className="page">
-      <Banner locale={params.locale} />
+      <Banner />
 
       <section className="container card-container">
         {homeCards.map((card, index) => (
-          <Card key={index} {...card} locale={params.locale} />
+          <Card key={index} {...card} />
         ))}
       </section>
 
       {/* About section */}
-      <AboutSection locale={params.locale} />
+      <AboutSection />
 
       {/* Portfolio Section */}
       <section className="container">
         <header className="title">
-          <h1>{getLocaleJson()[params.locale].home.services.title}</h1>
+          <h1>Tecrübelerim</h1>
         </header>
-        <ExperienceSection locale={params.locale} />
+        <ExperienceSection />
       </section>
     </section>
   );

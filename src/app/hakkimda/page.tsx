@@ -1,17 +1,15 @@
-import { homeCards } from "@/constants";
-import type { TLocales } from "@/types";
 import Card from "@/components/shared/card/Card";
-import { getLocaleJson } from "@/utils/getLocaleJson";
+import { aboutParagrafs, homeCards } from "@/constants";
 import PortfolioSection from "@/components/about/portfolio/PortfolioSection";
 
-const AboutPage = ({ params }: { params: { locale: TLocales } }) => {
+const AboutPage = () => {
   return (
     <section className="page container">
       <header className="title">
-        <h1>{getLocaleJson()[params.locale].about.title}</h1>
+        <h1>Hakkımda</h1>
       </header>
 
-      {getLocaleJson()[params.locale].about.paragrafs.map((txt, i) => (
+      {aboutParagrafs.map((txt, i) => (
         <p key={i} className="text">
           {txt}
         </p>
@@ -20,12 +18,12 @@ const AboutPage = ({ params }: { params: { locale: TLocales } }) => {
       {/* Services card section */}
       <section className="container card-container">
         {homeCards.map((card, index) => (
-          <Card key={index} {...card} locale={params.locale} />
+          <Card key={index} {...card} />
         ))}
       </section>
 
       {/* experience section */}
-      <PortfolioSection locale={params.locale} />
+      <PortfolioSection />
     </section>
   );
 };

@@ -7,7 +7,8 @@ export type TKeysEnum<T extends string | number | symbol> = {
 
 export type TNavbarLinks = {
   route: string;
-} & TKeysEnum<TLocales>
+  title: string;
+}
 
 export interface IShareButton {
   Icon: IconType;
@@ -52,5 +53,13 @@ export interface IHomeCardProps {
 }
 
 export type THomeCardWithLocale = {
-  [Prop in keyof IHomeCardProps]: TKeysEnum<TLocales>
-} & { icon: any }
+  title: string;
+  text: string;
+  icon: IconType;
+}
+
+export interface IHomeExperience {
+  title: string;
+  date: string;
+  job: string
+}

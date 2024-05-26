@@ -3,10 +3,9 @@
 import CardItem from "./Card";
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
-import { TLocales } from "@/types";
-import { getLocaleJson } from "@/utils/getLocaleJson";
+import { portfolioCards } from "@/constants";
 
-const PortfolioSection = ({locale}: {locale: TLocales}) => {
+const PortfolioSection = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -16,18 +15,18 @@ const PortfolioSection = ({locale}: {locale: TLocales}) => {
   return (
     <section ref={container} className="container">
       <header className="title">
-        <h1>{getLocaleJson()[locale].about.portfolio.title}</h1>
+        <h1>Çalışmalarım</h1>
       </header>
 
       {/* stack cards */}
-      {getLocaleJson()[locale].about.portfolio.projects.map((card, index) => (
+      {portfolioCards.map((card, index) => (
         <CardItem
           {...card}
           index={index}
           key={card.title}
           range={[index * 0.25, 1]}
           progress={scrollYProgress}
-          targetScale={1 - (getLocaleJson()[locale].about.portfolio.projects.length - index) * 0.05}
+          targetScale={1 - (portfolioCards.length - index) * 0.05}
         />
       ))}
     </section>

@@ -1,15 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import styles from "./resmenu.module.scss";
 import { IoIosMenu } from "react-icons/io";
-import { AnimatePresence, delay, motion } from "framer-motion";
 import { navbarLinks } from "@/constants";
-import { TLocales } from "@/types";
-import Link from "next/link";
-import LocaleImage from "./LocaleImage";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { AnimatePresence, motion } from "framer-motion";
 
 const menuVariant = {
   open: {
@@ -63,7 +61,7 @@ const footerVariant = {
   },
 };
 
-const ResponsiveNavbar = ({ locale }: { locale: TLocales }) => {
+const ResponsiveNavbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -92,10 +90,10 @@ const ResponsiveNavbar = ({ locale }: { locale: TLocales }) => {
                 {navbarLinks.map((link) => (
                   <motion.li variants={straggerVariants} key={link.route}>
                     <Link
-                      href={`/${locale}/${link.route}`}
+                      href={`/${"tr"}/${link.route}`}
                       onClick={() => setIsOpen(false)}
                     >
-                      {link[locale]}
+                      {link.title}
                     </Link>
                   </motion.li>
                 ))}
@@ -109,13 +107,6 @@ const ResponsiveNavbar = ({ locale }: { locale: TLocales }) => {
                   animate="animate"
                   className="flex contact align-center not-none"
                 >
-                  <motion.li
-                    variants={footerVariant}
-                    className={styles.not_pad}
-                  >
-                    <LocaleImage locale={locale} />
-                  </motion.li>
-
                   <motion.li
                     variants={footerVariant}
                     className={styles.not_pad}

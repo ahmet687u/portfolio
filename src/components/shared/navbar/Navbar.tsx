@@ -1,6 +1,5 @@
 import Menu from "./Menu";
 import Link from "next/link";
-import LocaleImage from "./LocaleImage";
 import type { TLocales } from "@/types";
 import styles from "./navbar.module.scss";
 
@@ -11,18 +10,16 @@ import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const font = Dancing_Script({ subsets: ["latin"] });
 
-export default function Navbar({ locale }: { locale: TLocales }) {
+export default function Navbar() {
   return (
     <nav className={`${styles.navbar} flex align-center`}>
-      <Menu locale={locale} />
+      <Menu />
 
-      <Link href={`/${locale}`} className={`${font.className} logo`}>
+      <Link href="/" className={`${font.className} logo`}>
         Ahmet BIYIKLI
       </Link>
 
       <ul className="flex contact align-center">
-        <LocaleImage locale={locale} />
-
         <li>
           <Link href="https://github.com/ahmet687u">
             <FiGithub />
@@ -35,7 +32,7 @@ export default function Navbar({ locale }: { locale: TLocales }) {
         </li>
       </ul>
 
-      <ResponsiveNavbar locale={locale} />
+      <ResponsiveNavbar />
     </nav>
   );
 }

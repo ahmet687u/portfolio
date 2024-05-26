@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import styles from "./card.module.scss";
 import type { ICardItemProps } from "@/types";
 import { motion, useTransform } from "framer-motion";
-import Link from "next/link";
 
 const CardItem = (props: ICardItemProps): JSX.Element => {
   const container = useRef(null);
@@ -24,16 +24,18 @@ const CardItem = (props: ICardItemProps): JSX.Element => {
         data-index={props.index + 1}
         style={{
           scale,
-          // backgroundColor: props.color,
           top: `calc(-10% + ${props.index * 50}px)`,
         }}
       >
         <h2>{props.title}</h2>
 
-        {props?.link ? <Link href={props.link} className={styles.link}>{props.link}</Link> : null}
-        
-        <p className="text">{props.description}</p>
+        {props?.link ? (
+          <Link href={props.link} className={styles.link}>
+            {props.link}
+          </Link>
+        ) : null}
 
+        <p className="text">{props.description}</p>
       </motion.div>
     </article>
   );
