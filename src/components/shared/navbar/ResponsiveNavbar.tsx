@@ -12,8 +12,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const menuVariant = {
   open: {
     clipPath: "circle(85% at 40% 40%)",
-    width: 300,
-    height: 600,
+    width: 250,
+    height: 300,
   },
   closed: {
     clipPath: "circle(0% at 0% 0%)",
@@ -27,14 +27,14 @@ const menuVariant = {
 
 const straggerVariants = {
   initial: {
-    x: -20,
+    x: -30,
     opacity: 0,
     transition: {
       staggerChildren: 0.2,
     },
   },
   open: {
-    x: 10,
+    x: 0,
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
