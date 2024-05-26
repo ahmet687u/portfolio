@@ -38,14 +38,6 @@ export interface IExperience {
   link?: URL | string;
 }
 
-export type TLocales = "tr" | "en"
-
-export interface ILocalePageProps {
-  params: {
-    locale: TLocales
-  }
-}
-
 export interface IHomeCardProps {
   text: string;
   title: string;

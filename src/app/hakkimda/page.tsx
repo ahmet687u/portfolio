@@ -16,7 +16,7 @@ const AboutPage = () => {
       ))}
       
       {/* Services card section */}
-      <section className="container card-container">
+      <section className="card-container">
         {homeCards.map((card, index) => (
           <Card key={index} {...card} />
         ))}

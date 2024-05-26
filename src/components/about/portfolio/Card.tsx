@@ -21,10 +21,9 @@ const CardItem = (props: ICardItemProps): JSX.Element => {
     >
       <motion.div
         className={styles.card}
-        data-index={props.index + 1}
         style={{
           scale,
-          top: `calc(-10% + ${props.index * 50}px)`,
+          top: `calc(-10% + ${props.index * 70}px)`,
         }}
       >
         <h2>{props.title}</h2>

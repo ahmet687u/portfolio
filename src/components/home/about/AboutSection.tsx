@@ -22,12 +22,6 @@ const item = {
 };
 
 const AboutSection = () => {
-  const { scrollYProgress } = useScroll();
-
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 720], {
-    clamp: false,
-  });
-
   return (
     <section className={`container ${styles.about}`}>
       <header className="title">

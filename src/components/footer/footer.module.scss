@@ -56,6 +56,8 @@
   @include break-max(768px) {
     .section {
       grid-column: span 2;
+      margin: 1rem 0;
+      padding: 0 1rem;
     }
   }
 }

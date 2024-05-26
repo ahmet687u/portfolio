@@ -90,7 +90,7 @@ const ResponsiveNavbar = () => {
                 {navbarLinks.map((link) => (
                   <motion.li variants={straggerVariants} key={link.route}>
                     <Link
-                      href={`/${"tr"}/${link.route}`}
+                      href={link.route}
                       onClick={() => setIsOpen(false)}
                     >
                       {link.title}

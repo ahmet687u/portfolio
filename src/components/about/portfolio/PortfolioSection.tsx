@@ -13,7 +13,7 @@ const PortfolioSection = () => {
   });
 
   return (
-    <section ref={container} className="container">
+    <section ref={container}>
       <header className="title">
         <h1>Çalışmalarım</h1>
       </header>
