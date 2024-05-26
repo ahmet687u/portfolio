@@ -1,6 +1,5 @@
 import Menu from "./Menu";
 import Link from "next/link";
-import type { TLocales } from "@/types";
 import styles from "./navbar.module.scss";
 
 import { FiGithub } from "react-icons/fi";
